@@ -36,4 +36,24 @@ def create_recipes():
     recipe_dict = model_to_dict(recipe)
     return jsonify(data=recipe_dict, status={"code": 201, "message": "Success"})
 
+#show route
+@recipe.route('/<id>', methods=["GET"])
+def get_one_post(id):
+    print(id, 'yeeet')
+    recipe = models.Recipe.get_by_id(id)
+    print(recipe.__dict__)
+    return jsonify(data=model_to_dict(recipe), status={"code": 200, "message": "Success"})
 
+
+# ## update route Not really sure I need this route
+# @recipe.route('/<id>', methods=["PUT"])
+# def recipe_update(id):
+#     print('UPDATINGGG')
+#     print(id)
+#     payload = request.get_json()
+#     print(payload)
+#     payload['user'] = payload['user']['id']
+#     query = models.Recipe.update(**payload).where(models.Recipe.id == id)
+#     print(query)
+#     query.execute()
+#     return jsonify(data=model_to_dict(models.Recipe.get_by_id(id)), status={"code": 200, "message": "resource updated successfully"})
