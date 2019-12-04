@@ -1,0 +1,335 @@
+b'{
+    "recipes": [
+        {
+            "vegetarian": false,
+            "vegan": false,
+            "glutenFree": true,
+            "dairyFree": true,
+            "veryHealthy": false,
+            "cheap": false,
+            "veryPopular": false,
+            "sustainable": false,
+            "weightWatcherSmartPoints": 12,
+            "gaps": "no",
+            "lowFodmap": true,
+            "ketogenic": false,
+            "whole30": true,
+            "sourceUrl": "http://www.seriouseats.com/recipes/2008/06/mark-bittman-shrimp-my-way-recipe.html",
+            "spoonacularSourceUrl": "https://spoonacular.com/essentials-fast-food-bittmans-way-with-shrimp-197110",
+            "aggregateLikes": 7,
+            "spoonacularScore": 40.0,
+            "healthScore": 5.0,
+            "creditsText": "Serious Eats",
+            "sourceName": "Serious Eats",
+            "pricePerServing": 57.54,
+            "extendedIngredients": [
+                {
+                    "id": 10093657,
+                    "aisle": "Seafood",
+                    "image": "shrimp-dried.jpg",
+                    "consitency": "solid",
+                    "name": "dried shrimp",
+                    "original": "1 1/2 to 2 pounds shrimp, in the 20-30 per pound range, peeled, rinsed, and dried",
+                    "originalString": "1 1/2 to 2 pounds shrimp, in the 20-30 per pound range, peeled, rinsed, and dried",
+                    "originalName": "shrimp, in the 20-30 per pound range, peeled, rinsed, and dried",
+                    "amount": 1.5,
+                    "unit": "pounds",
+                    "meta": [
+                        "dried",
+                        "rinsed",
+                        "peeled",
+                        "per pound range, , , and "
+                    ],
+                    "metaInformation": [
+                        "dried",
+                        "rinsed",
+                        "peeled",
+                        "per pound range, , , and "
+                    ],
+                    "measures": {
+                        "us": {
+                            "amount": 1.5,
+                            "unitShort": "lb",
+                            "unitLong": "pounds"
+                        },
+                        "metric": {
+                            "amount": 680.389,
+                            "unitShort": "g",
+                            "unitLong": "grams"
+                        }
+                    }
+                },
+                {
+                    "id": 11297,
+                    "aisle": "Produce",
+                    "image": "parsley.jpg",
+                    "consitency": "solid",
+                    "name": "fresh parsley leaves",
+                    "original": "Minced fresh parsley leaves for garnish",
+                    "originalString": "Minced fresh parsley leaves for garnish",
+                    "originalName": "Minced fresh parsley for garnish",
+                    "amount": 1.0,
+                    "unit": "leaves",
+                    "meta": [
+                        "fresh",
+                        "minced",
+                        "for garnish"
+                    ],
+                    "metaInformation": [
+                        "fresh",
+                        "minced",
+                        "for garnish"
+                    ],
+                    "measures": {
+                        "us": {
+                            "amount": 1.0,
+                            "unitShort": "leaf",
+                            "unitLong": "leave"
+                        },
+                        "metric": {
+                            "amount": 1.0,
+                            "unitShort": "leaf",
+                            "unitLong": "leave"
+                        }
+                    }
+                },
+                {
+                    "id": 1002014,
+                    "aisle": "Spices and Seasonings",
+                    "image": "ground-cumin.jpg",
+                    "consitency": "solid",
+                    "name": "ground cumin",
+                    "original": "1 teaspoon ground cumin",
+                    "originalString": "1 teaspoon ground cumin",
+                    "originalName": "ground cumin",
+                    "amount": 1.0,
+                    "unit": "teaspoon",
+                    "meta": [],
+                    "metaInformation": [],
+                    "measures": {
+                        "us": {
+                            "amount": 1.0,
+                            "unitShort": "tsp",
+                            "unitLong": "teaspoon"
+                        },
+                        "metric": {
+                            "amount": 1.0,
+                            "unitShort": "tsp",
+                            "unitLong": "teaspoon"
+                        }
+                    }
+                },
+                {
+                    "id": 4053,
+                    "aisle": "Oil, Vinegar, Salad Dressing",
+                    "image": "olive-oil.jpg",
+                    "consitency": "liquid",
+                    "name": "olive oil",
+                    "original": "1/2 cup extra-virgin olive oil",
+                    "originalString": "1/2 cup extra-virgin olive oil",
+                    "originalName": "extra-virgin olive oil",
+                    "amount": 0.5,
+                    "unit": "cup",
+                    "meta": [
+                        "extra-virgin"
+                    ],
+                    "metaInformation": [
+                        "extra-virgin"
+                    ],
+                    "measures": {
+                        "us": {
+                            "amount": 0.5,
+                            "unitShort": "cups",
+                            "unitLong": "cups"
+                        },
+                        "metric": {
+                            "amount": 118.294,
+                            "unitShort": "ml",
+                            "unitLong": "milliliters"
+                        }
+                    }
+                },
+                {
+                    "id": 2028,
+                    "aisle": "Spices and Seasonings",
+                    "image": "paprika.jpg",
+                    "consitency": "solid",
+                    "name": "paprika",
+                    "original": "1 1/2 teaspoons fresh spicy paprika",
+                    "originalString": "1 1/2 teaspoons fresh spicy paprika",
+                    "originalName": "fresh spicy paprika",
+                    "amount": 1.5,
+                    "unit": "teaspoons",
+                    "meta": [
+                        "fresh"
+                    ],
+                    "metaInformation": [
+                        "fresh"
+                    ],
+                    "measures": {
+                        "us": {
+                            "amount": 1.5,
+                            "unitShort": "tsps",
+                            "unitLong": "teaspoons"
+                        },
+                        "metric": {
+                            "amount": 1.5,
+                            "unitShort": "tsps",
+                            "unitLong": "teaspoons"
+                        }
+                    }
+                },
+                {
+                    "id": 1102047,
+                    "aisle": "Spices and Seasonings",
+                    "image": "salt-and-pepper.jpg",
+                    "consitency": "solid",
+                    "name": "salt and pepper",
+                    "original": "Salt and freshly ground black pepper to taste",
+                    "originalString": "Salt and freshly ground black pepper to taste",
+                    "originalName": "Salt and freshly ground black pepper to taste",
+                    "amount": 4.0,
+                    "unit": "servings",
+                    "meta": [
+                        "black",
+                        "freshly ground",
+                        "to taste"
+                    ],
+                    "metaInformation": [
+                        "black",
+                        "freshly ground",
+                        "to taste"
+                    ],
+                    "measures": {
+                        "us": {
+                            "amount": 4.0,
+                            "unitShort": "servings",
+                            "unitLong": "servings"
+                        },
+                        "metric": {
+                            "amount": 4.0,
+                            "unitShort": "servings",
+                            "unitLong": "servings"
+                        }
+                    }
+                }
+            ],
+            "id": 197110,
+            "title":"Essentials: Fast Food, Bittman\'s Way, with Shrimp",
+            "readyInMinutes": 45,
+            "servings": 4,
+            "image": "https://spoonacular.com/recipeImages/197110-556x370.jpg",
+            "imageType": "jpg",
+            "cuisines": [],
+            "dishTypes": [
+                "lunch",
+                "main course",
+                "main dish",
+                "dinner"
+            ],
+            "diets": [
+                "gluten free",
+                "dairy free",
+                "paleolithic",
+                "primal",
+                "fodmap friendly",
+                "whole 30",
+                "pescatarian"
+            ],
+            "occasions": [],
+            "winePairing": {},
+            "instructions":"Procedures                                                                              1                                                                            Preheat the broiler and slip an oven rack into the closest possible position.                                                                                                                            2                                                                            Warm the olive oil very gently in a large, broad, ovenproof skillet or baking pan. There should be enough olive oil to cover the bottom of the pan; don\xe2\x80\x99t skimp. Put the garlic in the oil and cook for a few minutes, still over low heat, until it turns golden.                                                                                                                            3                                                                            Raise the heat to medium-high and add the shrimp, salt, pepper, cumin, and paprika. Stir to blend and immediately place under the broiler. Cook, shaking the pan once or twice and stirring if necessary, but generally leaving the shrimp undisturbed, until they are pink all over and the mixture is bubbly. This will take from 5 to 10 minutes, depending on the heat of your broiler. Garnish and serve immediately.",
+            "analyzedInstructions": [
+                {
+                    "name": "",
+                    "steps": [
+                        {
+                            "number": 1,
+                            "step": "Preheat the broiler and slip an oven rack into the closest possible position.",
+                            "ingredients": [],
+                            "equipment": [
+                                {
+                                    "id": 405914,
+                                    "name": "broiler",
+                                    "image": "oven.jpg"
+                                },
+                                {
+                                    "id": 404784,
+                                    "name": "oven",
+                                    "image": "oven.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "number": 2,
+                            "step":"Warm the olive oil very gently in a large, broad, ovenproof skillet or baking pan. There should be enough olive oil to cover the bottom of the pan; don\xe2\x80\x99t skimp.",
+                            "ingredients": [
+                                {
+                                    "id": 4053,
+                                    "name": "olive oil",
+                                    "image": "olive-oil.jpg"
+                                }
+                            ],
+                            "equipment": [
+                                {
+                                    "id": 404646,
+                                    "name": "baking pan",
+                                    "image": "roasting-pan.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "number": 3,
+                            "step": "Put the garlic in the oil and cook for a few minutes, still over low heat, until it turns golden.",
+                            "ingredients": [],
+                            "equipment": []
+                        },
+                        {
+                            "number": 4,
+                            "step": "Raise the heat to medium-high and add the shrimp, salt, pepper, cumin, and paprika. Stir to blend and immediately place under the broiler. Cook, shaking the pan once or twice and stirring if necessary, but generally leaving the shrimp undisturbed, until they are pink all over and the mixture is bubbly. This will take from 5 to 10 minutes, depending on the heat of your broiler.",
+                            "ingredients": [
+                                {
+                                    "id": 2028,
+                                    "name": "paprika",
+                                    "image": "paprika.jpg"
+                                },
+                                {
+                                    "id": 1002014,
+                                    "name": "cumin",
+                                    "image": "ground-cumin.jpg"
+                                },
+                                {
+                                    "id": 2047,
+                                    "name": "salt",
+                                    "image": "salt.jpg"
+                                }
+                            ],
+                            "equipment": [
+                                {
+                                    "id": 405914,
+                                    "name": "broiler",
+                                    "image": "oven.jpg"
+                                },
+                                {
+                                    "id": 404645,
+                                    "name": "frying pan",
+                                    "image": "pan.png"
+                                }
+                            ],
+                            "length": {
+                                "number": 5,
+                                "unit": "minutes"
+                            }
+                        },
+                        {
+                            "number": 5,
+                            "step": "Garnish and serve immediately.",
+                            "ingredients": [],
+                            "equipment": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}'
