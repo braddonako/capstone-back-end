@@ -12,7 +12,7 @@ breakfastRecipe = Blueprint('breakfastRecipes', 'breakfastRecipe')  # this will 
 def get_random_recipes():
     try:
         breakfastRecipe = "test code"
-        breakfastRecipe = requests.get('https://api.spoonacular.com/recipes/random?apiKey=40b4dc4ae9fe4482b9d5633dd6ff2738&number=1&tags=breakfast')
+        breakfastRecipe = requests.get('https://api.spoonacular.com/recipes/random?apiKey=40b4dc4ae9fe4482b9d5633dd6ff2738&number=2&tags=breakfast')
         print(breakfastRecipe.content)
         # recipe.headers['content-type':]
         # return jsonify(data=recipe.content, status={"code": 200, "message": "Success"})

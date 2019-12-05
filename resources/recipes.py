@@ -12,7 +12,7 @@ recipe = Blueprint('recipes', 'recipe') ## this will be my route
 def get_random_recipes():
     try:
         recipe="test code"
-        recipe = requests.get('https://api.spoonacular.com/recipes/random?apiKey=40b4dc4ae9fe4482b9d5633dd6ff2738&number=1&tags=dinner')
+        recipe = requests.get('https://api.spoonacular.com/recipes/random?apiKey=40b4dc4ae9fe4482b9d5633dd6ff2738&number=2&tags=dinner')
         print(recipe.content)
         # recipe.headers['content-type':]
         # return jsonify(data=recipe.content, status={"code": 200, "message": "Success"})
@@ -38,7 +38,7 @@ def create_recipes():
 
 #show route
 @recipe.route('/<id>', methods=["GET"])
-def get_one_post(id):
+def get_one_recipe(id):
     print(id, 'yeeet')
     recipe = models.Recipe.get_by_id(id)
     print(recipe.__dict__)
@@ -57,3 +57,11 @@ def get_one_post(id):
 #     print(query)
 #     query.execute()
 #     return jsonify(data=model_to_dict(models.Recipe.get_by_id(id)), status={"code": 200, "message": "resource updated successfully"})
+
+@recipe.route('/<id>', methods=["Delete"])
+# @login_required
+def delete_post(id):
+    query = models.Recipe.delete().where(models.Recipe.id == id)
+    print(models.Recipe.id)
+    query.execute()
+    return jsonify(data='resource successfully deleted', status={"code": 200, "message": "resource deleted successfully"})
