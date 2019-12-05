@@ -15,6 +15,18 @@ class Recipe(Model):
         database = DATABASE
 
 
+class BreakfastRecipe(Model):
+    sourceURL = CharField()
+    spoonacularId = IntegerField()
+    title = CharField()
+    readyInMinutes = IntegerField()
+    servings = IntegerField()
+    image = CharField()
+
+    class Meta:
+        database = DATABASE
+
+
 class User(Model, UserMixin):
     email = CharField(unique=True)
     password = CharField()
@@ -36,6 +48,6 @@ class User(Model, UserMixin):
 
 def initialize():
     DATABASE.connect()
-    DATABASE.create_tables([Recipe, User], safe=True)
+    DATABASE.create_tables([Recipe, User, BreakfastRecipe], safe=True)
     print("TABLES Created")
     DATABASE.close()

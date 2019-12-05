@@ -11,6 +11,7 @@ import models
 
 from resources.recipes import recipe
 from resources.users import user
+from resources.breakfastRecipes import breakfastRecipe
 
 login_manager = LoginManager()
 
@@ -45,6 +46,9 @@ def after_request(response):
 
 CORS(recipe, origins=['http://localhost:3000'], supports_credentials=True)
 app.register_blueprint(recipe, url_prefix='/api/v1/recipes')
+
+CORS(breakfastRecipe, origins=['http://localhost:3000'], supports_credentials=True)
+app.register_blueprint(breakfastRecipe, url_prefix='/api/v1/breakfastRecipes')
 
 CORS(user, origins=['http://localhost:3000'], supports_credentials=True)
 app.register_blueprint(user, url_prefix='/api/v1/user')
