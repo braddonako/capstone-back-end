@@ -12,6 +12,7 @@ import models
 from resources.recipes import recipe
 from resources.users import user
 from resources.breakfastRecipes import breakfastRecipe
+# from resource.savedRecipes import savedRecipe
 
 login_manager = LoginManager()
 
@@ -52,6 +53,10 @@ app.register_blueprint(breakfastRecipe, url_prefix='/api/v1/breakfastRecipes')
 
 CORS(user, origins=['http://localhost:3000'], supports_credentials=True)
 app.register_blueprint(user, url_prefix='/api/v1/user')
+
+
+# CORS(savedRecipe, origins=['http://localhost:3000'], supports_credentials=True)
+# app.register_blueprint(savedRecipe, url_prefix='/api/v1/savedRecipes')
 
 @app.route('/')
 def index():

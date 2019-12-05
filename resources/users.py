@@ -28,7 +28,8 @@ def register():
         new_user = models.User.create(**payload)
         # Start a new session with the new user
         print(new_user)
-        login_user(new_user)
+        logged_in_user = login_user(new_user)
+        print(logged_in_user)
         user_dict = model_to_dict(new_user)
         print(user_dict)
         print(type(user_dict))
