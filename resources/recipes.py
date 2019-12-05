@@ -5,7 +5,7 @@ from flask import Blueprint, jsonify, request, Response
 
 from playhouse.shortcuts import model_to_dict
 
-recipe = Blueprint('recipes', 'recipe')
+recipe = Blueprint('recipes', 'recipe') ## this will be my route
 
 ## here we are retrieving the random recipe from the spoonacular API
 @recipe.route('/', methods=["GET"])
