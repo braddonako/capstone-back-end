@@ -3,30 +3,6 @@ from flask_login import UserMixin
 
 DATABASE = SqliteDatabase('recipes.sqlite')
 
-# class Recipe(Model):
-#     sourceURL = CharField()
-#     spoonacularId = IntegerField()
-#     title = CharField()
-#     readyInMinutes = IntegerField()
-#     servings = IntegerField()
-#     image = CharField()
-
-#     class Meta:
-#         database = DATABASE
-
-
-# class BreakfastRecipe(Model):
-#     sourceURL = CharField()
-#     spoonacularId = IntegerField()
-#     title = CharField()
-#     readyInMinutes = IntegerField()
-#     servings = IntegerField()
-#     image = CharField()
-
-#     class Meta:
-#         database = DATABASE
-
-
 class User(Model, UserMixin):
     email = CharField(unique=True)
     password = CharField()
