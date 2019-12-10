@@ -22,27 +22,27 @@ def get_random_recipes():
 
 
 @recipe.route('/', methods=["POST"])
-def create_recipes():
+def saved_recipe():
     ## see request payload anagolous to req.body in express
     payload = request.get_json()
     print(type(payload), 'payload')
-    recipe = models.Recipe.create(**payload)
+    saved_recipe = models.SavedRecipe.create(**payload)
     ## see the object
-    print(recipe.__dict__)
+    print(saved_recipe.__dict__)
     ## Look at all the methods
-    print(dir(recipe))
+    print(dir(saved_recipe))
     # Change the model to a dict
-    print(model_to_dict(recipe), 'model to dict')
-    recipe_dict = model_to_dict(recipe)
-    return jsonify(data=recipe_dict, status={"code": 201, "message": "Success"})
+    print(model_to_dict(saved_recipe), 'model to dict')
+    saved_recipe_dict = model_to_dict(saved_recipe)
+    return jsonify(data=saved_recipe_dict, status={"code": 201, "message": "Success"})
 
 #show route
-@recipe.route('/<id>', methods=["GET"])
-def get_one_recipe(id):
-    print(id, 'yeeet')
-    recipe = models.Recipe.get_by_id(id)
-    print(recipe.__dict__)
-    return jsonify(data=model_to_dict(recipe), status={"code": 200, "message": "Success"})
+# @recipe.route('/<id>', methods=["GET"])
+# def get_one_recipe(id):
+#     print(id, 'yeeet')
+#     recipe = models.Recipe.get_by_id(id)
+#     print(recipe.__dict__)
+#     return jsonify(data=model_to_dict(recipe), status={"code": 200, "message": "Success"})
 
 
 # ## update route Not really sure I need this route
