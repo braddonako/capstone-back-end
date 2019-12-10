@@ -57,3 +57,16 @@ def login():
         return jsonify(data={}, status={'code': 401, 'message': "Email or password is incorrect"})
     except models.DoesNotExist:
         return jsonify(data={}, status={'code': 401, 'message': "Email or password is incorrect"})
+
+
+
+@user.route('/logout', methods=['GET'])
+# closely following the docs here: https://flask-login.readthedocs.io/en/latest/#login-example
+def logout():
+  # for fun lets get the user's email from current_user to make a nice msg
+  email = model_to_dict(current_user)['email']
+  logout_user()
+  return jsonify(data={}, status={
+      'code': 200,
+      'message': "Successfully logged out {}".format(email)
+  })

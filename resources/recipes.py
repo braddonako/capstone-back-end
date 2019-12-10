@@ -61,7 +61,8 @@ def saved_recipe():
 @recipe.route('/<id>', methods=["Delete"])
 # @login_required
 def delete_post(id):
-    query = models.Recipe.delete().where(models.Recipe.id == id)
-    print(models.Recipe.id)
+    query = models.Recipe.delete().where(models.SavedRecipe.id == id)
+    print(models.SavedRecipe.id)
     query.execute()
     return jsonify(data='resource successfully deleted', status={"code": 200, "message": "resource deleted successfully"})
+
