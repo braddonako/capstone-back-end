@@ -32,3 +32,11 @@ def get_all_saved_recipes():
     # print(recipe.__dict__)
     get_all_saved_recipes = [model_to_dict(savedRecipe, max_depth=1) for savedRecipe in models.SavedRecipe.select()]
     return jsonify(data=get_all_saved_recipes, status={'code': 200, 'message': 'Success'})
+
+@savedRecipe.route('/<id>', methods=["Delete"])
+# @login_required
+def delete_recipe(id):
+    query = models.SavedRecipe.delete().where(models.SavedRecipe.id == id)
+    print(models.SavedRecipe.id)
+    query.execute()
+    return jsonify(data='resource successfully deleted', status={"code": 200, "message": "resource deleted successfully"})

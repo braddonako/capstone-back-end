@@ -36,33 +36,3 @@ def saved_recipe():
     saved_recipe_dict = model_to_dict(saved_recipe)
     return jsonify(data=saved_recipe_dict, status={"code": 201, "message": "Success"})
 
-#show route
-# @recipe.route('/<id>', methods=["GET"])
-# def get_one_recipe(id):
-#     print(id, 'yeeet')
-#     recipe = models.Recipe.get_by_id(id)
-#     print(recipe.__dict__)
-#     return jsonify(data=model_to_dict(recipe), status={"code": 200, "message": "Success"})
-
-
-# ## update route Not really sure I need this route
-# @recipe.route('/<id>', methods=["PUT"])
-# def recipe_update(id):
-#     print('UPDATINGGG')
-#     print(id)
-#     payload = request.get_json()
-#     print(payload)
-#     payload['user'] = payload['user']['id']
-#     query = models.Recipe.update(**payload).where(models.Recipe.id == id)
-#     print(query)
-#     query.execute()
-#     return jsonify(data=model_to_dict(models.Recipe.get_by_id(id)), status={"code": 200, "message": "resource updated successfully"})
-
-# @recipe.route('/<id>', methods=["Delete"])
-# # @login_required
-# def delete_recipe(id):
-#     query = models.SavedRecipe.delete().where(models.SavedRecipe.id == id)
-#     print(models.SavedRecipe.id)
-#     query.execute()
-#     return jsonify(data='resource successfully deleted', status={"code": 200, "message": "resource deleted successfully"})
-
