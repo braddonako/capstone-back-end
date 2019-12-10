@@ -25,9 +25,10 @@ def save_recipe():
     return jsonify(data=savedRecipe_dict, status={"code": 201, "message": "Success"})
 
 #show route on saved recipe page
-@savedRecipe.route('/<id>', methods=["GET"])
-def get_saved_recipes(id):
+@savedRecipe.route('/', methods=["GET"])
+def get_all_saved_recipes():
     print(id, 'yeeet')
-    recipe = models.SavedRecipe.get_by_id(id)
-    print(recipe.__dict__)
-    return jsonify(data=model_to_dict(recipe), status={"code": 200, "message": "Success"})
+    # recipe = models.SavedRecipe.get_by_id()
+    # print(recipe.__dict__)
+    get_all_saved_recipes = [model_to_dict(savedRecipe, max_depth=1) for savedRecipe in models.SavedRecipe.select()]
+    return jsonify(data=get_all_saved_recipes, status={'code': 200, 'message': 'Success'})
