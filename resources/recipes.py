@@ -58,11 +58,11 @@ def saved_recipe():
 #     query.execute()
 #     return jsonify(data=model_to_dict(models.Recipe.get_by_id(id)), status={"code": 200, "message": "resource updated successfully"})
 
-@recipe.route('/<id>', methods=["Delete"])
-# @login_required
-def delete_post(id):
-    query = models.Recipe.delete().where(models.SavedRecipe.id == id)
-    print(models.SavedRecipe.id)
-    query.execute()
-    return jsonify(data='resource successfully deleted', status={"code": 200, "message": "resource deleted successfully"})
+# @recipe.route('/<id>', methods=["Delete"])
+# # @login_required
+# def delete_recipe(id):
+#     query = models.SavedRecipe.delete().where(models.SavedRecipe.id == id)
+#     print(models.SavedRecipe.id)
+#     query.execute()
+#     return jsonify(data='resource successfully deleted', status={"code": 200, "message": "resource deleted successfully"})
 

@@ -38,7 +38,7 @@ def register():
         return jsonify(data=user_dict, status={'code': 201, 'message': 'User created'})
 
 
-@user.route('/login', methods=['POST'])
+@user.route('/login', methods=['POST', 'GET'])
 def login():
     print('We are hitting the login route')
     payload = request.get_json()
@@ -66,6 +66,7 @@ def logout():
   # for fun lets get the user's email from current_user to make a nice msg
   email = model_to_dict(current_user)['email']
   logout_user()
+  print('user is logged out', logout_user)
   return jsonify(data={}, status={
       'code': 200,
       'message': "Successfully logged out {}".format(email)
