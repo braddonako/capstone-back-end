@@ -49,28 +49,28 @@ def after_request(response):
     return response
 
 
-CORS(glutenFreeRecipe, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com/'], supports_credentials=True)
+CORS(glutenFreeRecipe, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com'], supports_credentials=True)
 app.register_blueprint(glutenFreeRecipe, url_prefix='/api/v1/glutenFreeRecipes')
 
-CORS(recipe, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com/'], supports_credentials=True)
+CORS(recipe, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com'], supports_credentials=True)
 app.register_blueprint(recipe, url_prefix='/api/v1/recipes')
 
-CORS(breakfastRecipe, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com/'], supports_credentials=True)
+CORS(breakfastRecipe, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com'], supports_credentials=True)
 app.register_blueprint(breakfastRecipe, url_prefix='/api/v1/breakfastRecipes')
 
-CORS(user, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com/'], supports_credentials=True)
+CORS(user, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com'], supports_credentials=True)
 app.register_blueprint(user, url_prefix='/api/v1/user')
 
-CORS(savedRecipe, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com/'], supports_credentials=True)
+CORS(savedRecipe, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com'], supports_credentials=True)
 app.register_blueprint(savedRecipe, url_prefix='/api/v1/savedRecipes')
 
-CORS(glutenFreeBreakfast, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com/'], supports_credentials=True)
+CORS(glutenFreeBreakfast, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com'], supports_credentials=True)
 app.register_blueprint(glutenFreeBreakfast, url_prefix='/api/v1/glutenFreeBreakfasts')
 
-CORS(vegetarianDinner, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com/'], supports_credentials=True)
+CORS(vegetarianDinner, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com'], supports_credentials=True)
 app.register_blueprint(vegetarianDinner, url_prefix='/api/v1/vegetarianDinners')
 
-CORS(vegetarianBreakfast, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com/'], supports_credentials=True)
+CORS(vegetarianBreakfast, origins=['http://localhost:3000', 'https://whattoeatrandomrecipe.herokuapp.com'], supports_credentials=True)
 app.register_blueprint(vegetarianBreakfast, url_prefix='/api/v1/vegetarianBreakfasts')
 
 @app.route('/')
