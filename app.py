@@ -13,6 +13,10 @@ from resources.recipes import recipe
 from resources.users import user
 from resources.breakfastRecipes import breakfastRecipe
 from resources.savedRecipes import savedRecipe
+from resources.glutenFreeRecipes import glutenFreeRecipe
+from resources.glutenFreeBreakfasts import glutenFreeBreakfast
+from resources.vegetarianDinner import vegetarianDinner
+from resources.vegetarianBreakfasts import vegetarianBreakfast
 
 login_manager = LoginManager()
 
@@ -45,6 +49,9 @@ def after_request(response):
     return response
 
 
+CORS(glutenFreeRecipe, origins=['http://localhost:3000'], supports_credentials=True)
+app.register_blueprint(glutenFreeRecipe, url_prefix='/api/v1/glutenFreeRecipes')
+
 CORS(recipe, origins=['http://localhost:3000'], supports_credentials=True)
 app.register_blueprint(recipe, url_prefix='/api/v1/recipes')
 
@@ -57,9 +64,14 @@ app.register_blueprint(user, url_prefix='/api/v1/user')
 CORS(savedRecipe, origins=['http://localhost:3000'], supports_credentials=True)
 app.register_blueprint(savedRecipe, url_prefix='/api/v1/savedRecipes')
 
+CORS(glutenFreeBreakfast, origins=['http://localhost:3000'], supports_credentials=True)
+app.register_blueprint(glutenFreeBreakfast, url_prefix='/api/v1/glutenFreeBreakfasts')
 
-# CORS(savedRecipe, origins=['http://localhost:3000'], supports_credentials=True)
-# app.register_blueprint(savedRecipe, url_prefix='/api/v1/savedRecipes')
+CORS(vegetarianDinner, origins=['http://localhost:3000'], supports_credentials=True)
+app.register_blueprint(vegetarianDinner, url_prefix='/api/v1/vegetarianDinners')
+
+CORS(vegetarianBreakfast, origins=['http://localhost:3000'], supports_credentials=True)
+app.register_blueprint(vegetarianBreakfast, url_prefix='/api/v1/vegetarianBreakfasts')
 
 @app.route('/')
 def index():
