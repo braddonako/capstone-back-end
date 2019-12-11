@@ -11,7 +11,6 @@ class User(Model, UserMixin):
         db_table = 'users'
         database = DATABASE
 
-
 class SavedRecipe(Model):
     sourceURL = CharField()
     spoonacularId = IntegerField()
@@ -22,7 +21,6 @@ class SavedRecipe(Model):
     class Meta:
         db_table = 'saved_recipes'
         database = DATABASE
-
 
 def initialize():
     DATABASE.connect()

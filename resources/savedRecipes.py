@@ -35,7 +35,9 @@ def get_all_saved_recipes():
 
 @savedRecipe.route('/<id>', methods=["Delete"])
 # @login_required
-def delete_recipe(id):
+def recipe_to_delete_recipe(id):
+    recipe_to_delete = models.SavedRecipe.get(id=id)
+    print(recipe_to_delete)
     query = models.SavedRecipe.delete().where(models.SavedRecipe.id == id)
     print(models.SavedRecipe.id)
     query.execute()

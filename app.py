@@ -63,7 +63,7 @@ app.register_blueprint(savedRecipe, url_prefix='/api/v1/savedRecipes')
 
 @app.route('/')
 def index():
-    return 'This is going to be a mouthatruckinnnn bitch'
+    return 'lessss go'
 
 # Run the app when the program starts!
 if __name__ == '__main__':
